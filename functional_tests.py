@@ -7,7 +7,7 @@ class NewVisitorTest(unittest.TestCase):
 
     def tearDown(self):
         self.browser.quit()
-        self.browser.implicit_wayt(3)
+        #self.browser.implicitly_wait(10)
 
 
     def test_can_browse_the_blog(self):
