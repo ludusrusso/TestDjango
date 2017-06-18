@@ -17,11 +17,17 @@ class NewVisitorTest(unittest.TestCase):
 
         # Ludus notice that the title of the page is LudusBlog
         self.assertIn('LudusBlog', self.browser.title)
-        self.fail('finish the test')
 
         # Ludus notice that there is an interesting post called 'first post'
+        inputbox = self.browser.find_element_by_id('id_title_post')
+        self.assertEqual(inputbox.text, 'first post')
 
-        # Ludus clicks on the post and start reading, he notice
+        self.fail('finish the test')
+
+        # Ludus clicks on the post title, the page chages
+
+
+        # and start reading, he notice
 
         # Ludus is satisfed and closes the blog.
 
